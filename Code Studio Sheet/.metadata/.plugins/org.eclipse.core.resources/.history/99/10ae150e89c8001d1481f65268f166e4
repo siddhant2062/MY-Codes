@@ -23,7 +23,6 @@ import java.util.*;
 					stack.push(newNode);
 				}
 			}
-			System.out.println("hello");
 			return root;
 		}
 		static Node<Integer> takeinput(Scanner sc){
