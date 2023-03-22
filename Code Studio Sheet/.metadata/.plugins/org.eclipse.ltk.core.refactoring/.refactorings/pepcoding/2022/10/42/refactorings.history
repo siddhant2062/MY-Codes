@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;_1recursion._3_display_array&apos; to &apos;_4_first_index_of_array&apos;&#x0D;&#x0A;- Original project: &apos;pepcoding&apos;&#x0D;&#x0A;- Original element: &apos;_1recursion._3_display_array&apos;&#x0D;&#x0A;- Renamed element: &apos;_1recursion._4_first_index_of_array&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_3_display_array&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_1recursion{_3_display_array.java[_3_display_array" matchStrategy="1" name="_4_first_index_of_array" qualified="false" references="true" similarDeclarations="false" stamp="1665814436495" textual="false" version="1.0"/>
+</session>

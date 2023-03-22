@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class averagemarks {
+	
+	
+
+	private static Scanner s;
+
+	public static void main(String args[]) {
+	s = new Scanner(System.in);
+	
+     char String='A';
+	int t1=3;
+	int t2=4;
+	int t3=6;
+	
+	float avg=(t1+t2+t3)/3;
+	
+	System.out.println(String);
+	System.out.println(avg);
+	
+		
+	}
+
+}

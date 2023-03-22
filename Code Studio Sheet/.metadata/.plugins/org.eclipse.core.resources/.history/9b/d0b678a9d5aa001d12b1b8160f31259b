@@ -1,0 +1,35 @@
+package Level_1;
+import java.util.*;
+public class rough {
+	static String keypad[]= {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+	static String keypadCodes(String input, int index) 
+	{ 
+	    // Base case 
+	    if (index == input.length()) 
+	        return ""; 
+	  
+	    // Find the character at the current index 
+	    char ch = input.charAt(index); 
+	  
+	    // Get the keypad codes for the character 
+	    String codes = keypad[ch - '0']; 
+	  
+	    // Initialize an empty string 
+	    String outputString = ""; 
+	  
+	    // Recursive call for each of the keypad codes 
+	    for (int i = 0; i < codes.length(); i++) { 
+	        outputString += codes.charAt(i) + 
+	                         keypadCodes(input, index + 1); 
+	    } 
+	  
+	    // Return the output string 
+	    return outputString; 
+	}
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+		System.out.println(keypadCodes(str,0));
+		
+	}
+}

@@ -1,0 +1,45 @@
+package Level_1;
+import java.util.*;
+public class _2_get_keypad_codes {
+	static String codes[]= {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+//	static ArrayList<String> getkc(String digits){
+//		if(digits.length()==0) {
+//			ArrayList<String> ans=new ArrayList<>();
+//			ans.add("");
+//			return ans;
+//		}
+//		int ch=digits.charAt(0)-'0';
+//		for(int i=0;i<codes[ch].length();i++) {
+//			ArrayList<String> small=getkc(digits.substring(1));	
+//			
+//		}
+//		
+//	}
+	String getkc(String outputString, int index) 
+	{ 
+	    // Base case 
+	    if (index == input.length()) 
+	        return outputString; 
+	  
+	    // Find the character at the current index 
+	    char ch = input.charAt(index); 
+	  
+	    // Get the keypad codes for the character 
+	    String codes = keypad[ch - '0']; 
+	  
+	    // Iterate through each code 
+	    for (int i = 0; i < codes.length(); i++) { 
+	        outputString += codes.charAt(i); 
+	        // Tail recursive call 
+	        outputString = keypadCodes(outputString, index + 1); 
+	    } 
+	  
+	    // Return the output string 
+	    return outputString; 
+	}
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String digits=sc.next();
+		System.out.println(getkc(digits));
+	}
+}

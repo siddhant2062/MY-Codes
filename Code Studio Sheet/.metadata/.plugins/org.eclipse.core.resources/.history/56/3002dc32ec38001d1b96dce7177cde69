@@ -1,0 +1,20 @@
+package rough;
+import java.util.Scanner;
+public class Rough_1 {
+	
+	static int power(int x,int n) {
+		if(n==0) {
+			return 1;
+		}
+		int broke=power(x,n-1);
+		int ans=broke*x;
+		
+		 return ans;
+	}
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int x=s.nextInt();
+		System.out.println(power(n,x));
+	}
+}

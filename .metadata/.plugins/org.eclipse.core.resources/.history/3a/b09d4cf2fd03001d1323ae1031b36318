@@ -1,0 +1,24 @@
+package arrays;
+import java.util.Scanner;
+public class triplet_sum {
+	static void triplet(int arr[],int target) {
+		for(int i=0;i<arr.length-2;i++) {
+			for(int j=i+1;j<arr.length-1;j++) {
+				for(int k=j+1;k<arr.length;k++) {
+					if(arr[i]+arr[j]+arr[k]==target) {
+						System.out.print("Triplet is " + arr[i] + ", " + arr[j] + ", " + arr[k]);
+					}
+				}
+			}
+		}
+	}
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		int target=s.nextInt();
+		int size=s.nextInt();
+		int[] arr=new int[size];		
+		triplet(arr,target);
+		
+	}
+
+}

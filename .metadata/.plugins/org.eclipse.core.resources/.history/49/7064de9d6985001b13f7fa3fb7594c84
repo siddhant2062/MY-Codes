@@ -1,0 +1,51 @@
+package test;
+
+import java.util.Scanner;
+
+interface IArea {
+	double area(int r);
+
+	double pi = 3.14;
+
+}
+
+interface IVolume {
+	double volume(int r, int h);
+
+}
+
+class Circle implements IArea {
+	public double area(int r) {
+		
+		double area=pi*r*r;
+		return area;
+
+	}
+}
+
+class Cylinder extends Circle implements IVolume {
+	public double volume(int r, int h) {
+		
+		double volume=pi*r*r*h;
+		return volume;
+
+	}
+
+}
+
+class Geometry {
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		Circle c1 = new Circle();
+		Cylinder c2 = new Cylinder();
+		
+		int r=s.nextInt();
+		int h=s.nextInt();
+		
+		System.out.println(Math.floor(c1.area(r)));
+		System.out.println(Math.floor(c2.volume(r, h)));
+		
+
+	}
+
+}

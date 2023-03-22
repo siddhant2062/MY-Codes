@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;rough.rough_2.java&apos; to &apos;anmol.java&apos;&#x0D;&#x0A;- Original project: &apos;rough&apos;&#x0D;&#x0A;- Original element: &apos;rough.rough_2.java&apos;&#x0D;&#x0A;- Renamed element: &apos;rough.anmol.java&apos;" description="Rename compilation unit &apos;rough_2.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;rough{rough_2.java" name="anmol.java" references="false" stamp="1606486275548" version="1.0"/>
+</session>

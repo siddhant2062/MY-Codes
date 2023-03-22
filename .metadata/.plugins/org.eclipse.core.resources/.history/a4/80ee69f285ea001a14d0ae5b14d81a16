@@ -1,0 +1,16 @@
+package remove_character;
+import java.util.Scanner;
+public class remove_character {
+	public static String take_input() {
+		Scanner s=new Scanner(System.in);
+		
+		String str=s.nextLine();
+		return str;
+	}
+	public static void remove(String s) {
+		
+		int size=s.length();
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package KMP_algo;
+
+import java.util.*;
+
+
+public class rough1 {
+	
+	static void find(String str,String child) {
+		int ans=0;
+		for(int i=0;i+child.length()<=str.length();i++) {
+			if(child.equals(str.substring(i,child.length()+i))) {
+				ans=i;
+				break;
+			}
+			
+		}
+		System.out.println(ans);
+	}
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String str=sc.next();
+    	String child=sc.next();
+    	find(str,child);
+    	
+    	
+    }
+}
+

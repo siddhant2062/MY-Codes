@@ -1,0 +1,9 @@
+package recursion;
+import java.util.*;
+public class VII_return_an_arraylist_linear_search {
+public static void main(String args[]) {
+	Scanner s=new Scanner(System.in);
+	ArrayList<Integer> list=new ArrayList<>();
+	
+}
+}

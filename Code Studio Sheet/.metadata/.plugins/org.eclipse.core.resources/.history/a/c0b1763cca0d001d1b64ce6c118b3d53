@@ -1,0 +1,20 @@
+package contest_1;
+import java.util.*;
+public class iv_simple_input {
+	public static void main(String args[]) {
+	Scanner s=new Scanner(System.in);
+		int arr[]=new int[1000];
+		int sum=Integer.MIN_VALUE;
+	for(int i=0;i<1000;i++) {
+		arr[i]=s.nextInt();
+		sum=sum+arr[i];
+		if(sum<0) {
+			break;
+		}
+	}
+	for(int i=0;i<arr.length;i++) {
+		System.out.println(arr[i]);
+	}
+	}
+
+}

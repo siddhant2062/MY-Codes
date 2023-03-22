@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class simpleinterestcalculator {
+	public static void main(String args[]) {
+		Scanner a=new Scanner(System.in);
+		
+		int b=a.nextInt();
+		
+		
+		
+		String str=a.next();
+		System.out.println(b);
+		System.out.println(str);
+		
+		int p=a.nextInt(); 
+		int r=a.nextInt(); 
+		int t=a.nextInt();
+
+		int si=(p*r*t)/100;
+		System.out.println(si);
+
+//		long l=a.nextLong();
+//		float f=a.nextFloat();
+//		double d=a.nextDouble();
+//		String str=a.nextLine();
+//		String str=a.next();
+//		char c=str.charAt(put the no [like 0,1,2,3...] to find which character  );
+		
+	}		
+
+}

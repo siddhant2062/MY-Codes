@@ -1,0 +1,34 @@
+package KMP_algo;
+
+import java.util.*;
+
+public class rough1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // number of rows
+        int m = sc.nextInt(); // additional people
+        int[] a = new int[n]; // initial number of people in each row
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        Arrays.sort(a); // sort rows in ascending order of initial number of people
+        int minK = a[n-1]; // minimum possible k is the number of people in the row with the most people initially
+        int totalPeople = m; // keep track of total number of people after addition
+        for (int i = n-1; i >= 0; i--) {
+            if (a[i] < minK+1) { // if the next row has fewer people than the minimum possible k + 1
+                minK++; // increase minimum possible k
+            } else {
+                break;
+            }
+        }
+        for (int i = 0; i < n && totalPeople > 0; i++) {
+            int spaceLeft = minK - a[i]; // number of empty seats in the row
+            int add = Math.min(totalPeople, spaceLeft); // number of people that can be added to the row
+            a[i] += add; // add people to the row
+            totalPeople -= add; // update total number of people left to add
+        }
+        int maxK = a[n-1]; // maximum possible k is the number of people in the row with the most people after addition
+        System.out.println(minK + " " + maxK);
+    }
+}
+

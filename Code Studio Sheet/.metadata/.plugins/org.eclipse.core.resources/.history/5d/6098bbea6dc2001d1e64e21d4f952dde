@@ -1,0 +1,10 @@
+package Level_1;
+import java.util.*;
+public class rough1 {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+		String out="";
+		System.out.println(find(str,0,));
+	}
+}

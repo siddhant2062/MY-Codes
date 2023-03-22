@@ -1,0 +1,38 @@
+package fixed;
+import java.util.*;
+public class rough {
+	
+	static int numberOfSubstrings(String s) {
+		int ansCount=0;
+        String temp=s;
+        while(temp.length()!=0){
+            int countA=0;
+            int countB=0;
+            int countC=0;
+            cout<<temp<<endl;
+            for(int j=0;j<temp.length();j++){
+                if(countA>=1 && countB>=1 && countC>=1) 
+                {   
+                    
+                    ansCount++;
+                    ansCount+=temp.length()-3;
+                    cout<<ansCount<<endl;
+                    break;
+                }
+                if(temp[j]=='a'){
+                    countA++;
+                }
+                else if(temp[j]=='b'){
+                    countB++;
+                }
+                if(temp[j]=='c'){
+                    countC++;
+                }
+            }
+            temp=temp.substr(1);
+        }       
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String str=s.next();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;rough.Spiral_Print&apos; to &apos;Spiral&apos;&#x0D;&#x0A;- Original project: &apos;rough&apos;&#x0D;&#x0A;- Original element: &apos;rough.Spiral_Print&apos;&#x0D;&#x0A;- Renamed element: &apos;rough.Spiral&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Spiral_Print&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;rough{Spiral_Print.java[Spiral_Print" matchStrategy="1" name="Spiral" qualified="false" references="true" similarDeclarations="false" stamp="1616156413051" textual="false" version="1.0"/>
+</session>

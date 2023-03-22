@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;assignment.Fahrenheit_to_celsius_table.main().s&apos; in &apos;assignment.Fahrenheit_to_celsius_table.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;lecture 7-Functions&apos;&#x0D;&#x0A;- Original element: &apos;assignment.Fahrenheit_to_celsius_table.main().s&apos;&#x0D;&#x0A;- Field name: &apos;s&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;s&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;assignment{Fahrenheit_to_celsius_table.java" name="s" selection="487 24" stamp="1620112078248" static="true" version="1.0" visibility="2"/>
+</session>

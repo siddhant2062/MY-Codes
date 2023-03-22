@@ -1,0 +1,16 @@
+package Level_1;
+import java.util.*;
+public class rough1 {
+	static String codes[]= {"",""};
+	static ArrayList<String> find(String str){
+		int ch=
+		ArrayList<String> ans=new ArrayList<>();
+		
+		return paths;
+	}
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+		System.out.println(find(str));
+	}
+}

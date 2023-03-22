@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;real_world_examples.Privileged&apos; to &apos;Current&apos;&#x0D;&#x0A;- Original project: &apos;ms teams&apos;&#x0D;&#x0A;- Original element: &apos;real_world_examples.Privileged&apos;&#x0D;&#x0A;- Renamed element: &apos;real_world_examples.Current&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Privileged&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;real_world_examples{Privileged.java[Privileged" matchStrategy="1" name="Current" qualified="false" references="true" similarDeclarations="false" stamp="1616396818910" textual="false" version="1.0"/>
+</session>

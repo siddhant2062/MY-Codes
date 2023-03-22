@@ -1,0 +1,22 @@
+package lecture8_static_function;
+
+class Student {
+	static private int num_of_student;
+
+	Student() {
+		num_of_student++;
+	}
+
+	static int getnumstudent() {
+		return num_of_student;
+	}
+}
+
+class Static_function {
+	public static void main(String args[]) {
+
+		Student s1 = new Student();
+		System.out.println(s1.getnumstudent());
+
+	}
+}

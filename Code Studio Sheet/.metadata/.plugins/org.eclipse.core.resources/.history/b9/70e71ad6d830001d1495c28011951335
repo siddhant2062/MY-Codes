@@ -1,0 +1,45 @@
+package recursion;
+import java.util.*;
+public class XIII_merge_sort {
+	static void mergesort(int start,int end,int arr[]) {
+		if(start>=end) {
+			int mid=start+(end-start)/2;
+			mergesort(start,mid,arr);
+			mergesort(mid+1,end,arr);
+			merge(start,mid,end,arr);
+		}
+	}
+	static void merge(int start,int mid,int end,int arr[]) {
+		int merge[]=new int[end-start+1];
+		int i=0,j=0,k=0;
+		while(i<=mid && j<=end) {
+			if(arr[i]<=arr[j]) {
+				merge[k++]=arr[i++];
+			}else {
+				merge[k++]=arr[j++];
+			}
+		}
+		while(i<=mid) {
+			merge[k++]=arr[i++];
+		}
+		while(j<=end) {
+			merge[k++]=arr[j++];
+		}
+		for(int a=0,b=start;a<merge.length;a++,b++) {
+			arr[b]=merge[k];
+		}
+		
+	}
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		int size=s.nextInt();
+		int arr[]=new int[size];
+		for(int i=0;i<size;i++) {
+			arr[i]=s.nextInt();
+		}
+		mergesort(0,size-1,arr);
+		System.out.println(Arrays.toString(arr));
+	}
+  
+
+}

@@ -1,0 +1,36 @@
+import java.util.*;
+public class rough2 {
+//	static int prosum(int n){
+//        int psum=1;
+//      while(n!=0){
+//          int rem=n%10;
+//          psum=psum*rem;
+//          n/=10;
+//      }  
+//       return psum; 
+//    }
+//    static int subsum(int n){
+//        int ssum=0;
+//        while(n!=0){
+//            int rem=n%10;
+//            ssum+=rem;
+//            n/=10;
+//        }
+//        return ssum;
+//    }
+//    static int subtractProductAndSum(int n) {
+////        int psum=prosum(n);
+////        int ssum=subsum(n);
+//        int sub=prosum(n)-subsum(n);
+//        return sub;
+//    }
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		    
+		    int n=s.nextInt();
+//		    System.out.println(subtractProductAndSum(n));
+		    while(n>=1 && (int)(n--)) {
+		    	
+		    }
+		}
+}

@@ -1,0 +1,21 @@
+package contest_1;
+import java.util.*;
+public class vii_nth_fibonacci {
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		int a=0;
+		int b=1;
+		int c=a+b;
+		int n=s.nextInt();
+		for(int i=1;i<=n;i++) {
+			a=b;
+			b=c;
+			c=a+b;
+			if(i==n) {
+				System.out.println(c);
+			}
+		}
+		
+	}
+
+}

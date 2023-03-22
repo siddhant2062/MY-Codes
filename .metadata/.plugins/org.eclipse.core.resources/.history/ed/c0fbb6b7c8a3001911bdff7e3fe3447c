@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class averagemarks {
+	
+	
+
+	private static Scanner s;
+
+	public static void main(String args[]) {
+	s = new Scanner(System.in);
+	
+    String str=s.next();
+	int i=s.nextInt();
+	System.out.print(str);
+	System.out.print(i);
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package Level_1;
+import java.util.*;
+public class rough1 {
+	static ArrayList<String> find(int sr,int sc,int dr,int dc){
+		if(sr==dr&&sc==dc) {
+			ArrayList<String> ans=new ArrayList<>();
+			ans.add("");
+			return ans;
+		}
+		ArrayList<String> paths=new ArrayList<>();
+		ArrayList<String> hpaths=new ArrayList<>();
+		ArrayList<String> vpaths=new ArrayList<>();
+		
+		if(sr<dr) {
+			hpaths=find(sr,sc+1,dr,dc);
+		}
+		if(sc<dc) {
+			vpaths=find(sr+1,sc,dr,dc);
+		}
+		for(int i=0;i<hpaths.size();i++) {
+			paths.add("h"+hpaths.get(i));
+		}
+		for(int i=0;i<vpaths.size();i++) {
+			paths.add("v"+vpaths.get(i));
+		}
+		return paths;
+	}
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int row=sc.nextInt();
+		int col=sc.nextInt();
+		System.out.println(find(1,1,row,col));
+	}
+}

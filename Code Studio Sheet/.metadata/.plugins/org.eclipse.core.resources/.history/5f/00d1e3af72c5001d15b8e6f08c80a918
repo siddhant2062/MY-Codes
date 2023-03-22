@@ -1,0 +1,19 @@
+package KMP_algo;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class rough1 {
+	public static int search(String text, String pattern)
+	{
+		int index=text.indexOf(pattern);
+		return index;
+	}
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String text=sc.next();
+    	String pattern=sc.next();
+        System.out.println(search(text,pattern));
+    }
+}
+

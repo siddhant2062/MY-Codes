@@ -1,0 +1,15 @@
+package recursion_1;
+import java.util.*;
+public class VIII_permutation_of_a_string {
+	static void permute(ArrayList<String> ans,String str,int start,int end) {
+		if(start==end) {
+			ans.add(str);
+		}
+	}
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		String str=s.next();
+		ArrayList<String> ans=new ArrayList<>();
+		permute(ans,str,0,ans.size()-1);
+	}
+}

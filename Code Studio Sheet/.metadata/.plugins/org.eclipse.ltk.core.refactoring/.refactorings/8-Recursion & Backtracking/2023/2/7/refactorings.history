@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Level_1._1_1_get_sub_alternate&apos; to &apos;_1_1_get_subsequence_alternate&apos;&#x0D;&#x0A;- Original project: &apos;8-Recursion &amp; Backtracking&apos;&#x0D;&#x0A;- Original element: &apos;Level_1._1_1_get_sub_alternate&apos;&#x0D;&#x0A;- Renamed element: &apos;Level_1._1_1_get_subsequence_alternate&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_1_1_get_sub_alternate&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Level_1{_1_1_get_sub_alternate.java[_1_1_get_sub_alternate" matchStrategy="1" name="_1_1_get_subsequence_alternate" qualified="false" references="true" similarDeclarations="false" stamp="1676187761136" textual="false" version="1.0"/>
+</session>

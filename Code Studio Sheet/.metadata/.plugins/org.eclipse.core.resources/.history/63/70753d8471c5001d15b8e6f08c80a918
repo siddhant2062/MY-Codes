@@ -1,0 +1,34 @@
+package KMP_algo;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class rough1 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int n = input.nextInt();    // number of rows
+        int m = input.nextInt();    // additional number of people
+
+        int maxCount = 0;
+        int totalCount = m;         // total count of people after m new people came to the theater
+
+        for (int i = 0; i < n; i++) {
+            int a = input.nextInt();   // number of people already in the row
+
+            maxCount = Math.max(maxCount, a);  // update maxCount as per maximum number of people already sitting in a row
+            totalCount += a;         // add already sitting people to the totalCount
+        }
+
+        // Calculate the minimum and maximum possible number of people sitting in one row after additional m people came to the theater
+        int minCount = maxCount + (m + n - 1) / n;   // minimum possible number of people in one row
+        int maxPossibleCount = Math.max(maxCount, (totalCount + n - 1) / n);  // maximum possible number of people in one row
+
+        // Print the output
+        System.out.print(minCount + " " + maxPossibleCount);
+
+        input.close();
+    }
+}
+

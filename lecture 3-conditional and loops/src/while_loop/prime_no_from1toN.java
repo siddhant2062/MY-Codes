@@ -1,0 +1,31 @@
+package while_loop;
+import java.util.Scanner;
+public class prime_no_from1toN {
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		
+		int i=1;
+		int n=s.nextInt();	
+		while(i<=n) {
+			
+			int j=2;
+			int temp=0;
+			while(j<=i-1) {
+				if(i%j==0) {
+					temp=temp+1;
+				}
+				j=j+1;
+				}
+		
+			if(temp==0) {
+				System.out.print(i+"=prime");
+			}else {
+				System.out.print(i+"=not prime");
+			}
+			System.out.println();
+			i=i+1;
+		}			
+	
+	}
+}
+
